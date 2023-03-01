@@ -61,7 +61,7 @@
     background-color: transparent;
   }
   .card-header {
-    background-color: #f3f2c9;
+    background-color: #b61616;
     font-weight: bold;
     color: black;
   }
@@ -81,9 +81,9 @@
     font-size: 1.5rem;
   }
   
-  /* img {
-    max-height: 500px;
-  } */
+  img {
+    max-height: 400px;
+  }
   
   @media (max-width: 768px) {
     .input {

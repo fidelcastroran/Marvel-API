@@ -1,7 +1,7 @@
 const body = document.body;
-const div_2 = document.createElement("div");
-div_2.classList.add("container-fluid", "row", "country_row");
-body.append(div_2);
+const div2 = document.createElement("div");
+div2.classList.add("container-fluid", "row", "country_row");
+body.append(div2);
 
 const getCharacters = function (keyword) {
   if (keyword == "") {
@@ -28,19 +28,19 @@ function displayCharacters(data) {
   returnButton.addEventListener("click", () => {
     location.reload();
   });
-  div_2.innerHTML = ``;
+  div2.innerHTML = ``;
   for (let characters of data) {
-    const div_3 = document.createElement("div");
-    div_3.classList.add("card", "h-100", "col-lg-4", "col-sm-12");
-    div_2.append(div_3);
-    const div_4 = document.createElement("div");
-    div_4.classList.add("card-header", "text-center", "name");
-    div_4.textContent = `${characters?.name}`;
-    div_3.append(div_4);
+    const div3 = document.createElement("div");
+    div3.classList.add("card", "h-100", "col-lg-4", "col-sm-12");
+    div2.append(div3);
+    const div4 = document.createElement("div");
+    div4.classList.add("card-header", "text-center", "name");
+    div4.textContent = `${characters?.name}`;
+    div3.append(div4);
     const anchor = document.createElement("a");
     anchor.setAttribute("href", `${characters?.urls[0].url}`);
-    anchor.setAttribute("target", "blank");
-    div_3.append(anchor);
+    anchor.setAttribute("target", "blank")
+    div3.append(anchor);
     const img = document.createElement("img");
     img.classList.add("card-img-top", "flag", "mt-3");
     img.setAttribute(
