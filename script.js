@@ -8,7 +8,7 @@ const getCharacters = function (keyword) {
     alert("Please Enter valid name, Try again!!!");
   } else {
     fetch(
-      `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${keyword}&ts=1&apikey=4d8b0740627f81add1cd57dfa0d0c9de&hash=0f7c662a53129c40a6ce012a7e3d392d`
+      `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${keyword}&ts=1&apikey=c8db460170b1bb894b474024996013e0&hash=6cea58f52576a25b7a9e57dc53cdc569a72a4e75`
     )
       .then((response) => response.json())
       .then((data) => {
